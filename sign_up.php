@@ -54,22 +54,19 @@
                <br>
               <label for="car_info">Car Information(<i style="color:red;">*must required for car owner and driver</i>)</label><br>
               <input type="text" placeholder="Model" name="model" style="width: 49%;">
-              <input type="text" placeholder="Plate Number" name="plate number" style="width: 49%;">
-              <input type="text" placeholder="Driving License Number" name="driving_license" style="width: 49%;">
-              <input type="text" placeholder="License Validity" name="license_validity" style="width: 49%;">
+              <input type="text" placeholder="Plate Number" name="plate_number" style="width: 49%;">
+              <input type="text" placeholder="Driving License Number" name="driving_license_number" style="width: 49%;">
+              <input type="date" placeholder="License Validity" name="license_validity" style="width: 49%;">
               <input type="text" placeholder="License Type" name="license_type" style="width: 49%;">
                 <br>             
               <label for="car_size">Seat No. : </label>
               <select name="car_size" id="car_size" style="width: 10%;">
+              <option value="" style="color: black;">0</option>
                   <option value="4" style="color: black;">4</option>
                   <option value="6" style="color: black;">6</option>
                   <option value="8" style="color: black;">8</option>
                   <option value="12" style="color: black;">12</option>
               </select>
-              <br>
-          
-              <label for="username">User Name</label><br>
-              <input type="text" placeholder="Select a User Name" name="username" required style="width: 50%;">
               <br>
 
               <label for="password">Password</label>

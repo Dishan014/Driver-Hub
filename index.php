@@ -10,7 +10,7 @@
 <body>
     <p class="title">Driver Hub</p>
     <div class="container-2">
-        <form action="" style="border:1px solid #ccc">
+        <form action="sign_in.php" method="POST" style="border:1px solid #ccc">
             <p style="text-align: center;">User Type</p>
             <div class="container">
                 <label style="margin-left: 80px; font-size: 23px;">
@@ -20,8 +20,8 @@
                   </label>
               <hr>
           
-              <label for="user_name">User Name</label>
-              <input type="text" placeholder="Enter User Name" name="user_name" required>
+              <label for="email">Email</label>
+              <input type="text" placeholder="Enter Your Email Address" name="email" required>
           
               <label for="password">Password</label>
               <input type="password" placeholder="Enter Password" name="password" required>
