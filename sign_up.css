@@ -1,0 +1,155 @@
+*{
+    margin: auto;
+    padding: auto;
+    color: white;
+}
+
+body{
+     background-color: black;
+}
+
+.header{
+  height: 50px;
+  width: 100%;
+  margin-top: 0px;
+  background-color: rgb(25, 134, 123);
+}
+
+.header li{
+  list-style: none;
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+.header li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.header li a:hover{
+  color: blueviolet;
+}
+
+.title{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-color: rgb(45, 145, 135);
+}
+
+h1{
+    font-size: 35px;
+}
+
+.container-3{
+    height: 600px;
+    width: 800px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.container-4{
+  height: 600px;
+  width: 800px;
+  background-color: rgb(0, 0, 0);
+  margin: auto;
+  padding: 10px;
+  
+}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=email], input[type=password],select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  color: black;
+}
+
+.container-4 input[type=text], input[type=email], input[type=date] {
+  width: 35%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  color: black;
+  outline: none;
+}
+
+.container-4 select{
+  width: 10%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  color: black;
+  outline: none;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus,select:focus{
+  background-color: #ddd;
+  outline: none;
+  color: black;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.container {
+  padding: 16px;
+}
+
+p{
+    font-size: 30px;
+    color: rgb(24, 143, 60);
+    font-weight: bolder;
+}
+
+b{
+    margin-left: 350px;
+}
+
+.buttons::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}

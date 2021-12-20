@@ -1,0 +1,45 @@
+*{
+    margin: auto;
+    padding: auto;
+    color: white;
+}
+
+body{
+     background-color: rgb(0, 0, 0);
+}
+
+.header{
+    height: 50px;
+    width: 100%;
+    margin-top: 0px;
+    background-color: rgb(25, 134, 123);
+}
+
+.header li{
+    list-style: none;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.header li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.header li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.personal_info p{
+    font-size: 30px;
+    margin: 20px;
+    margin-left: 0px;
+    color: rgb(168, 6, 6);
+    font-weight: bolder;
+}
+
+.personal_info i{
+    color: rgb(233, 230, 230);
+}
