@@ -1,42 +1,88 @@
-<?php
-    include "database_link.php";
+<?php 
 
-    session_start();
+session_start(); 
 
-        include("connection.php");
-        include("functions.php");
+include "database_link.php";
 
-        if($_SERVER['REQUEST_METHOD']=="POST")
-        {
-            $email = $_POST['email'];
-            $password = $_POST['password'];
+if (isset($_POST['email']) && isset($_POST['password'])) {
 
-            if(!empty($email) && !empty(!password) && !is_numeric($email))
-            {
-                $query = "select * from users where Email Address = '$email' limit 1";
+    function validate($data){
 
-                $result = mysqli_query($con,$query);
+       $data = trim($data);
 
-                if($result)
-                {
-                    if($result && mysqli_num_rows($result) > 0)
-                    {
-                        $user_data = mysqli_fetch_assoc($result);
+       $data = stripslashes($data);
 
-                        if($user_data['password'] === $password)
-                        {
-                            $_SESSION['user_id'] = $user_data['user_id'];
-                            header("Location: passenger_homepage.php");
-                            die;
-                        }
-                    }
-                }
-                echo "Please enter some valid info";
+       $data = htmlspecialchars($data);
+
+       return $data;
+
+    }
+
+    $email = validate($_POST['email']);
+
+    $pass = validate($_POST['password']);
+
+    if (empty($email)) {
+
+        header("Location: index.php?error=Email is required");
+
+        exit();
+
+    }else if(empty($pass)){
+
+        header("Location: index.php?error=Password is required");
+
+        exit();
+
+    }else{
+
+        $sql = "SELECT * FROM users WHERE Email_Address='$email' AND Password='$pass'";
+
+        $result = mysqli_query($conn, $sql);
+
+        if (mysqli_num_rows($result) === 1) {
+
+            $row = mysqli_fetch_assoc($result);
+
+            if ($row['Email_Address'] === $email && $row['Password'] === $pass) {
+
+                echo "Logged in!";
+
+                $_SESSION['Email_Address'] = $row['Email Address'];
+
+                $_SESSION['User_Type'] = $row['User_Type'];
+
+                // $_SESSION['id'] = $row['id'];
+
+                header("Location: car_owner_homepage.php");
+
+                exit();
+
             }
-            else
-            {
-                echo "Please enter some valid info";
+            else{
+
+                header("Location: index.php?error=Incorrect Email or Password!!!");
+
+                exit();
+
             }
+
+        }
+        else{
+
+            header("Location: index.php?error=Incorrect Email or Password!!!");
+
+            exit();
+
         }
 
-?>
+    }
+
+}
+else{
+
+    header("Location: index.php");
+
+    exit();
+
+} 

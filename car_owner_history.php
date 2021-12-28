@@ -10,11 +10,11 @@
 <body>
     <div class="header">
         <ul>
-            <li style="margin-left: 0px;"><a href="Car_owner_homepage.html">Home</a></li>
-            <li><a href="Car_owner_history.html">History</a></li>
-            <li><a href="Find_a_driver.html">Find a Driver</a></li>
-            <li><a href="Car_owner_settings.html">Settings</a></li>
-            <li style="margin-left: 620px;"><a href="Sign_in.html">Sign Out</a></li>
+            <li style="margin-left: 0px;"><a href="Car_owner_homepage.php">Home</a></li>
+            <li><a href="Car_owner_history.php">History</a></li>
+            <li><a href="Find_a_driver.php">Find a Driver</a></li>
+            <li><a href="Car_owner_settings.php">Settings</a></li>
+            <li style="margin-left: 620px;"><a href="sign_out.html">Sign Out</a></li>
         </ul>
     </div>
 </body>

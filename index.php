@@ -12,6 +12,7 @@
     <div class="container-2">
         <form action="sign_in.php" method="POST" style="border:1px solid #ccc">
             <p style="text-align: center;">User Type</p>
+            
             <div class="container">
                 <label style="margin-left: 80px; font-size: 23px;">
                     <input type="radio" name="category" style="margin-bottom:15px"> Passenger
@@ -21,7 +22,7 @@
               <hr>
           
               <label for="email">Email</label>
-              <input type="text" placeholder="Enter Your Email Address" name="email" required>
+              <input type="email" placeholder="Enter Your Email Address" name="email" required>
           
               <label for="password">Password</label>
               <input type="password" placeholder="Enter Password" name="password" required>
@@ -29,6 +30,9 @@
               <div class="buttons">
                 <button class="sign_in">Sign In</button>
               </div>
+              <?php if (isset($_GET['error'])) { ?>
+                  <p class="error"><?php echo $_GET['error']; ?></p>
+              <?php } ?>
               <b class="f_password"><a href="forgot_Password.php">Forgot Password?</a></b>
               <hr>
               <button style="width: 50%; margin-left: 25%; background-color: rgb(134, 26, 26);"><a style="text-decoration: none;" href="sign_up.php">Create New Account</a></button>

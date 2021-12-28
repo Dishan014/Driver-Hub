@@ -10,10 +10,10 @@
 <body>
     <div class="header">
         <ul>
-            <li style="margin-left: 0px;"><a href="Passenger_homepage.html">Home</a></li>
-            <li><a href="Passenger_history.html">History</a></li>
-            <li><a href="Find_a_driver.html">Find a Driver</a></li>
-            <li><a href="Passenger_settings.html">Settings</a></li>
+            <li style="margin-left: 0px;"><a href="Passenger_homepage.php">Home</a></li>
+            <li><a href="Passenger_history.php">History</a></li>
+            <li><a href="Find_a_driver.php">Find a Driver</a></li>
+            <li><a href="Passenger_settings.php">Settings</a></li>
             <li style="margin-left: 620px;"><a href="Sign_in.html">Sign Out</a></li>
         </ul>
     </div>

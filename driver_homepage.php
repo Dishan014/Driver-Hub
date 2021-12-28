@@ -10,10 +10,10 @@
 <body>
     <div class="header">
         <ul>
-            <li style="margin-left: 0px;"><a href="Driver_homepage.html">Home</a></li>
-            <li><a href="Driver_history.html">History</a></li>
-            <li><a href="Driver_settings.html">Settings</a></li>
-            <li><a href="Sign_in.html">Sign Out</a></li>
+            <li style="margin-left: 0px;"><a href="Driver_homepage.php">Home</a></li>
+            <li><a href="Driver_history.php">History</a></li>
+            <li><a href="Driver_settings.php">Settings</a></li>
+            <li><a href="sign_out.php">Sign Out</a></li>
         </ul>
     </div>
     <div class="personal_info">
