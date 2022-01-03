@@ -77,7 +77,7 @@
               <input type="password" placeholder="Confirm Password" name="confirm_password" required style="width: 45%; margin-left: 50px;">
           
               <div class="buttons">
-                <button class="sign_up">Sign Up</button>
+                <button class="sign_up" id="myButton">Sign Up</button>
               </div>
             </div>
           </form>

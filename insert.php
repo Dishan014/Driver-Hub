@@ -1,4 +1,6 @@
-<?php
+
+    
+        <?php
     include "database_link.php";
 
     $user_type=$_GET['user_type'];
@@ -26,6 +28,13 @@
     $conn->query($command);
     $command = "INSERT into users values('$user_type', '$email', '$password')";
     $conn->query($command);
-    echo "Account has been Created Successful";
-   
+
+    
+
+
+        echo '<script type="text/javascript">'; 
+        echo 'alert("Account is created successfully!!!\nNow sign in using your Email Address and Password.....");';
+        echo 'window.location.href = "index.php";';
+        echo '</script>';
+
 ?>
