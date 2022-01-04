@@ -18,9 +18,14 @@
             <li style="margin-left: 620px;"><a href="sign_out.php">Sign Out</a></li>
         </ul>
     </div>
+    <?php
+        session_start();
+        
+        $qry=mysqli_query($mysqli,"SELECT * FROM users_info where Email_Address='dadishan307@gmail.com'");
+    ?>
     <div class="personal_info">
         <h1><u style="color: rgb(6, 110, 6); font-size: 45px;">Personal Information</u></h1>
-        <p>Name : <i></i></p>
+        <p>Name : <i></i></p><?php echo $qry['Email_Address']; ?>
         <p>Gender : <i></i></p>
         <p>Email<sub style="color: rgb(168, 6, 6);">(<a href="" style="color: rgb(14, 14, 133); text-decoration: none;">Change</a>)</sub> : <i></i></p>
         <p>Contact No.<sub style="color: rgb(168, 6, 6);">(<a href="" style="color: rgb(14, 14, 133); text-decoration: none;">Change</a>)</sub> : <i></i></p>

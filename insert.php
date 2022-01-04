@@ -1,6 +1,6 @@
 
     
-        <?php
+    <?php
     include "database_link.php";
 
     $user_type=$_GET['user_type'];

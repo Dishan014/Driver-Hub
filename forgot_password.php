@@ -18,8 +18,8 @@
               <label for="email">Email</label>
               <input type="email" placeholder="Enter Email" name="email" required>
           
-              <label for="user_name">User Name</label>
-              <input type="text" placeholder="Enter User Name" name="user_name" required>
+              <label for="user_name">Contact Number</label>
+              <input type="text" placeholder="Enter Your Contact Number" name="contact_number" required>
           
               <div class="buttons">
                 <button class="send_code">Send Code</button>

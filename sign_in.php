@@ -52,9 +52,10 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
                 $_SESSION['User_Type'] = $row['User_Type'];
 
-                // $_SESSION['id'] = $row['id'];
+                $_SESSION['id'] = $row['Email_Address'];
 
                 header("Location: car_owner_homepage.php");
+                //$qry=mysqli_query($mysqli,"SELECT * FROM users_info WHERE Email_Address='".$_SESSION['$email'];."'");
 
                 exit();
 
